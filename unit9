@@ -1,6 +1,63 @@
 ## Name: Wilson Huang
 ## Course: APCSA
 ## Period: 7
-## Concept: Unit 8
+## Concept: Unit 9
 
 ### Introduction
+In APCSA (AP Computer Science A) we are curretly learning about inheritence (unit 9). This unit has been confusing and challenging for me since a lot of new concepts were introduced to me. I didn't do to well on the quiz and exam so throughout this write up I will take you through my challenges I had and some of the questions I got wrong on the tests. 
+
+### Challenge #1
+One challenge I had when learning inheritaence is learning what and how to use `super()`. I was confused on when to use it and hot it works. To understand this I watched youtube videos about this. For example I watched [this]() video that helped me understand what `super()` is. Throughout this video I learned that `super()` can access constructors and methods in the parent class but not all like private methods.
+``` java
+public String toString(){
+    return super.toString() + " with " + flavor;
+  }
+```
+
+### Challenge #2
+
+### Challenge #3
+In this challenge I will take you through some of the questions I got wrong on the unit test
+
+#### Challenge #3.1 - 3.2
+public class A
+{
+  public A()
+  {
+    System.out.print("one orange ");
+  }
+  
+  public A(int z)
+  {
+    System.out.print("two oranges ");
+  }
+
+  public void doStuff()
+  {
+    System.out.print("six oranges ");
+  }
+}
+
+public class B extends A
+{
+  public B()
+  {
+    super();
+    System.out.print("three oranges ");
+  }
+
+  public B(int val)
+  {
+    super(val);
+    System.out.print("four oranges ");
+  }
+} 
+What is `A a = new B(5);`?
+For this question I chose `four oranges` but it was wrong because I thought it would go directly to `public B(int val)` and print `four oranges` but I was wrong. 
+
+
+
+#### Challenge #3.3
+
+
+### Takeaways
