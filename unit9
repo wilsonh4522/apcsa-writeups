@@ -54,12 +54,44 @@ public class B extends A
     System.out.print("four oranges ");
   }
 } 
+##### Challenge 3.1
 What is `A a = new B(5);`?
-For this question I chose `four oranges` but it was wrong because I thought it would go directly to `public B(int val)` and print `four oranges` but I was wrong. I learned that if I create a new class of `b`, it goes to `int val` so the constructor 
-
+For this question I chose `four oranges` but it was wrong because I thought it would go directly to `public B(int val)` and print `four oranges`. I learned that if I create a new class of `b`, it goes to `int val` so the constructor prints two oranges and four oranges. 
+##### Challenge 3.2
+What is printed when the following line of code is executed? `b.doStuff();` 
 
 
 #### Challenge #3.3
+```java
+public class Conversation
+{
+ // default constructor automatically added to this class
+  public void hello()
+  {
+    System.out.println("Hello");
+  }
+  public void greeting()
+  {
+    hello();
+    System.out.println("Nice to meet you");
+  }
+}
 
+public class PoliteConversation extends Conversation
+{
+ // default constructor automatically added to this class
+  public void hello()
+  {
+    super.hello();
+    System.out.println("What a pleasant surprise!");
+  }
+  public void greeting()
+  {
+    super.greeting();
+    System.out.println("I hope you’re doing well");
+  }
+} 
+```
+What is printed as a result of the call conv.greeting()? For this question I chose Hello and Nice to meet you. However this is wrong because the methods for PoliteConversation are declared so the answer is Hello, What a pleasant surprise!, Nice to meet you, I hope you’re doing well
 
 ### Takeaways
