@@ -11,10 +11,12 @@ One challenge I had when learning inheritaence is learning what and how to use `
 ``` java
 public String toString(){
     return super.toString() + " with " + flavor;
-  }
+}
 ```
 
 ### Challenge #2
+Another challenge I faced when learning unit 9 is 
+
 
 ### Challenge #3
 In this challenge I will take you through some of the questions I got wrong on the unit test
@@ -53,7 +55,7 @@ public class B extends A
   }
 } 
 What is `A a = new B(5);`?
-For this question I chose `four oranges` but it was wrong because I thought it would go directly to `public B(int val)` and print `four oranges` but I was wrong. 
+For this question I chose `four oranges` but it was wrong because I thought it would go directly to `public B(int val)` and print `four oranges` but I was wrong. I learned that if I create a new class of `b`, it goes to `int val` so the constructor 
 
 
 
