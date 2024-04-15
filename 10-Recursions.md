@@ -80,7 +80,7 @@ public static void mystery(String s)
 ```
 What is printed as a result of the call `mystery("computer science")`?
 For ths question I answered:
-`
+```
 ce
 en
 ci
@@ -89,9 +89,9 @@ er
 ut
 mp
 co
-`
+```
 This is wrong because and the correct answer is 
-`
+```
 co
 mp
 ut
@@ -100,7 +100,7 @@ s
 ci
 en
 ce
-`
+```
 This is the correct answer because the method keeps breaking down `computer science` until it is not greater than the length is not greater than 2. Then it takes the two characters and prints it in each line to get the answer above. 
 ### Takeaways
 * Search on youtube if you do not understand a certain topic because there is a lot of online resources that can help you
